@@ -1,0 +1,58 @@
+@import '~@src/scss/_constants';
+
+.user-form {
+  max-width: 66.25rem;
+
+  .form-item {
+    position: relative;
+
+    @media (min-width: $mobile-breakpoint + 1px) {
+      display: inline-block;
+      margin-bottom: 1rem;
+      width: 40%;
+
+      &:nth-child(even) {
+        margin-left: 1rem;
+      }
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+      width: 100%;
+    }
+
+    > p {
+      color: $color-red;
+      font-size: 0.75rem;
+      font-style: italic;
+
+      @media (min-width: $mobile-breakpoint + 1px) {
+        position: absolute;
+      }
+    }
+  }
+
+  .form-input {
+    vertical-align: text-bottom;
+    width: 100%;
+
+    @media (max-width: $mobile-breakpoint) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .submit-button {
+    @media (min-width: $mobile-breakpoint + 1px) {
+      bottom: 1.5rem;
+      margin-left: 1rem;
+      width: 40%;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+      margin: 1.5rem 0 0;
+      width: 100%;
+    }
+
+    vertical-align: bottom;
+  }
+}
